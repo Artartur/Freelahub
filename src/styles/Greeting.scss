@@ -1,0 +1,122 @@
+#page-greeting {
+  background-color: var(--color-primary);
+  color: var(--color-text-in-primary);
+  height: 100vh;
+  width: 100vw;
+
+  #page-greeting-content {
+    #buttons-container {
+      margin: 3.2rem 0;
+      a {
+        align-items: center;
+        border-radius: 0.8rem;
+        color: var(--color-button-text);
+        display: flex;
+        font: 700 2rem Archivo;
+        height: 9.4rem;
+        justify-content: center;
+        margin-right: 1.6rem;
+        transition: background-color 0.2s;
+        width: 30rem;
+
+        &:first-child {
+          margin-right: 1.6rem;
+        }
+        
+        .icon{
+            margin-right:2.4rem
+        }
+      }
+
+      .study {
+        background-color: var(--color-primary-lighter);
+        &:hover {
+          background-color: var(--color-primary-light);
+        }
+      }
+
+      .teach {
+        background-color: var(--color-secundary);
+        &:hover {
+          background-color: var(--color-secundary-dark);
+        }
+      }
+    }
+
+    .greet-image {
+      width: 100%;
+    }
+
+    .logo-container {
+      margin-bottom: 3.2rem;
+      text-align: left;
+
+      h1 {
+        color: #ffffff;
+        font: 400 100px Mitr;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 4.6rem;
+        margin-top: 0.8rem;
+      }
+    }
+
+    #total-connections {
+      font-size: 1.8rem;
+
+      .handshake-icon {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}
+
+@media(min-width: 1100px) {
+    #page-greeting-content{
+        display: grid;
+        grid-template-areas: 
+        "logo greet greet"
+        "buttons buttons total";
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 400px 1fr;
+        max-width: 1100px;
+
+        #buttons-container{
+            grid-area: buttons;
+            justify-content: flex-start;
+            
+            a{
+                font-size: 2.4rem;
+            }
+        }
+
+        .greet-image{
+            grid-area: greet;
+            justify-self: end;
+        }
+
+        .logo-container{
+            align-self: center;
+            grid-area: logo;
+            margin: 0;
+
+            h1{
+                height: 100%;
+            }
+
+            h2{
+                font-size: 3.6rem;
+                text-align: initial;
+            }
+        }
+
+        #total-connections{
+            grid-area: total;
+            justify-self: end;
+        }
+
+    }
+}
