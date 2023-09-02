@@ -1,12 +1,12 @@
+import Greeting from './screens/Greeting'
 import './styles/App.css'
 
-function App() {
+export default function App() {
 
   return (
     <>
-      
+      <Greeting />
     </>
   )
 }
 
-export default App
