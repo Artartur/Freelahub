@@ -3,6 +3,7 @@ import React from "react";
 import { FaChalkboardUser } from "react-icons/fa6";
 import { FaRegHandshake } from "react-icons/fa";
 import { GiBookmarklet } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 import greetingImage from "../assets/greetingImage.png";
 import "../styles/Greeting.scss";
@@ -22,14 +23,14 @@ export default function Greeting() {
         />
 
         <div id="buttons-container" className="alignment">
-          <a className="study" href="">
+          <Link className="study" to="/teacherList">
             <GiBookmarklet alt="Estudar" className="icon" size="3rem" />
             Estudar
-          </a>
-          <a className="teach" href="">
+          </Link>
+          <Link className="teach" to="/teacherForm">
             <FaChalkboardUser alt="Ensinar" className="icon" size="3rem" />
             Ensinar
-          </a>
+          </Link>
         </div>
 
         <span id="total-connections" className="alignment">
