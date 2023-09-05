@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import "../styles/TeacherList.scss";
+import "../styles/ProjectList.scss";
 
-export default function TeacherList() {
+export default function ProjectList() {
   return (
-    <div id="page-teacher-list" className="container">
-      <Header title="Professores disponiveis">
+    <div id="page-project-list" className="container">
+      <Header title="Projetos disponiveis">
         <form id="search">
           <div className="input-block">
-            <label htmlFor="subject">Materia</label>
-            <input id="subject" type="text" />
+            <label htmlFor="stack">Funcao</label>
+            <input id="stack" type="text" />
           </div>
 
           <div className="input-block">

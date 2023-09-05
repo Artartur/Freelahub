@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Greeting from "../screens/Greeting";
-import TeacherForm from "../screens/TeacherForm";
-import TeacherList from "../screens/TeacherList";
+import ProjectForm from "../screens/ProjectForm";
+import ProjectList from "../screens/ProjectList";
 import React from "react";
 
 const routes = createBrowserRouter([
@@ -10,12 +10,12 @@ const routes = createBrowserRouter([
     path: "/",
   },
   {
-    element: <TeacherForm />,
-    path: "/teacherForm",
+    element: <ProjectForm />,
+    path: "/projectForm",
   },
   {
-    element: <TeacherList />,
-    path: "/teacherList",
+    element: <ProjectList />,
+    path: "/projectList",
   },
 ]);
 

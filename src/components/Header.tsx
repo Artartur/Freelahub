@@ -12,7 +12,7 @@ export default function Header({ children, title }: HeaderProps) {
           <IoIosArrowRoundBack size="4rem" />
           Voltar
         </Link>
-        <h1>Smarthub</h1>
+        <h1>Freelahub</h1>
       </div>
 
       <div className="header-content">
