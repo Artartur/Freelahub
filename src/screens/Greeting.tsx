@@ -5,6 +5,8 @@ import { FaRegHandshake } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdPersonSearch } from "react-icons/md";
 
+import { constants } from "../utils/constants";
+
 import greetingImage from "../assets/greetingImage.png";
 import "../styles/Greeting.scss";
 
@@ -26,11 +28,11 @@ export default function Greeting() {
         <div id="buttons-container" className="alignment">
           <Link className="lookForProjects" to="/projectList">
             <BsSearch alt="Procurar Projetos" className="icon" size="3rem" />
-            Procurar Projetos
+            {constants["look-for-projects"]}
           </Link>
           <Link className="hire" to="/projectForm">
             <MdPersonSearch alt="Contratar" className="icon" size="3rem" />
-            Contratar
+            {constants["hire"]}
           </Link>
         </div>
 
