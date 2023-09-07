@@ -1,26 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
+
 import Header from "../components/Header";
+import Select from "../components/Select";
+
+import { constants } from "../utils/constants";
+import { EventType } from "../utils";
+import { modality, service, skills } from "../utils/maps";
+
 import "../styles/ProjectList.scss";
 
 export default function ProjectList() {
+  const [data, setData] = useState({
+    modality: "",
+    service: "",
+    skills: "",
+  });
+
+  const handleChange = (e: EventType) => {
+    const { name, value } = e.target;
+    setData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+    console.log(name, value);
+  };
+
   return (
     <div id="page-project-list" className="container">
-      <Header title="Projetos disponiveis">
+      <Header title={constants["available-projects"]}>
         <form id="search">
-          <div className="input-block">
-            <label htmlFor="stack">Funcao</label>
-            <input id="stack" type="text" />
-          </div>
+          <Select
+            label={constants["service"]}
+            name="service"
+            options={service}
+            onChange={handleChange}
+            value={data.service}
+          />
 
-          <div className="input-block">
-            <label htmlFor="week_day">Dia da semana</label>
-            <input id="week_day" type="text" />
-          </div>
+          <Select
+            label={constants["modality"]}
+            name="modality"
+            options={modality}
+            onChange={handleChange}
+            value={data.modality}
+          />
 
-          <div className="input-block">
-            <label htmlFor="time">Hora</label>
-            <input id="time" type="time" />
-          </div>
+          <Select
+            label={constants["skills"]}
+            name="skills"
+            options={skills}
+            onChange={handleChange}
+            value={data.skills}
+          />
         </form>
       </Header>
     </div>
