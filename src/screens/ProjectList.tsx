@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Select from "../components/Select";
 
 import { constants } from "../utils/constants";
-import { EventType } from "../utils/index";
+import { EventSelectType } from "../utils/index";
 import { modality, service, skills } from "../utils/maps";
 import projects from "../utils/projects.json";
 
@@ -18,7 +18,7 @@ export default function ProjectList() {
     skills: "",
   });
 
-  const handleChange = (e: EventType) => {
+  const handleChange = (e: EventSelectType) => {
     const { name, value } = e.target;
     setData((prevData) => ({
       ...prevData,

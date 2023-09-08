@@ -1,7 +1,7 @@
 import React from "react";
 
 import { constants } from "../utils/constants";
-import { EventType } from "../utils";
+import { EventSelectType } from "../utils";
 
 import "../styles/Select.scss";
 
@@ -14,7 +14,7 @@ interface SelectProps {
   label: string;
   name: string;
   options: Array<OptionsMappers>;
-  onChange: (event: EventType) => void;
+  onChange: (event: EventSelectType) => void;
   value: string;
 }
 
