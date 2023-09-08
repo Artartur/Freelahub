@@ -1,0 +1,95 @@
+.project-item {
+  background-color: var(--color-box-base);
+  border: 1px solid var(--color-line-in-white);
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+  overflow: hidden;
+
+  footer {
+    align-items: center;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+    padding: 3.2rem 2rem;
+
+    button {
+      align-items: center;
+      background-color: var(--color-secundary);
+      border: 0;
+      border-radius: 0.8rem;
+      color: var(--color-button-text);
+      cursor: pointer;
+      display: flex;
+      font: 700 1.5rem Archivo;
+      height: 5.6rem;
+      justify-content: space-evenly;
+      transition: 0.2s;
+      width: 20rem;
+
+      &:hover {
+        background-color: var(--color-secundary-dark);
+      }
+    }
+
+    strong {
+      color: var(--color-primary);
+      display: block;
+      font-size: 1.6rem;
+    }
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    padding: 3.2rem 2rem 0 2rem;
+
+    div {
+      margin-left: 2.4rem;
+
+      span {
+        color: var(--color-text-title);
+        font-size: 1.3rem;
+        margin-top: 0.4rem;
+      }
+
+      strong {
+        color: var(--color-text-title);
+        display: block;
+        font: 700 2.4rem Archivo;
+      }
+    }
+  }
+
+  main {
+    p {
+      color: var(--color-text-base);
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .project-item {
+    footer {
+      padding: 2rem;
+      strong {
+        display: initial;
+        margin-left: 1.6rem;
+      }
+    }
+
+    header {
+      padding: 3.2rem 2rem 0 2rem;
+    }
+
+    main {
+      p {
+        padding: 0 3.2rem;
+      }
+    }
+  }
+}
