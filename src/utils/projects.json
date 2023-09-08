@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "description": "Gostaria de um sistema que eu possa criar, visualizar, editar e deletar os dados dos clientes da minha loja",
+    "modality": "Por hora",
+    "skills": "Java",
+    "title": "CRUD",
+    "value": "20,00"
+  },
+  {
+    "id": "2",
+    "description": "Gostaria de um sistema em que eu possa por todos os meus afazeres diariamente",
+    "modality": "Preco fixo",
+    "skills": "React",
+    "title": "TO-DO list",
+    "value": "1000,00"
+  },
+  {
+    "id": "3",
+    "description": "Gostaria de um sistema que me ajude a calcular, com operacoes de somatoria, subtracao, divisao e multiplicacao",
+    "modality": "Por hora",
+    "skills": "Php",
+    "title": "Calculator",
+    "value": "30,00"
+  }
+]
