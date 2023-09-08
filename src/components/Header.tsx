@@ -4,7 +4,13 @@ import React from "react";
 
 import "../styles/Header.scss";
 
-export default function Header({ children, title }: HeaderProps) {
+type HeaderProps = {
+  children?: JSX.Element | JSX.Element[] | string;
+  description?: string;
+  title: string;
+};
+
+export default function Header({ children, description, title }: HeaderProps) {
   return (
     <header className="page-header">
       <div className="top-bar-container">
@@ -17,13 +23,9 @@ export default function Header({ children, title }: HeaderProps) {
 
       <div className="header-content">
         <strong>{title}</strong>
+        {description && <p>{description}</p>}
         {children}
       </div>
     </header>
   );
 }
-
-type HeaderProps = {
-    children?: JSX.Element | JSX.Element[] | string;
-    title: string;
-  };

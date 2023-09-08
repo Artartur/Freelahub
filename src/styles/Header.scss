@@ -1,20 +1,28 @@
-.header-content {
-  margin: 0 auto;
-  margin: 3.2rem auto;
-  position: relative;
-  width: 90%;
-
-  strong {
-    color: var(--color-title-in-primary);
-    font: 700 3.6rem Archivo;
-    line-height: 4.2rem;
-  }
-}
-
 .page-header {
   background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
+
+  .header-content {
+    margin: 0 auto;
+    margin: 3.2rem auto;
+    position: relative;
+    width: 90%;
+
+    p {
+      color: var(--color-text-in-primary);
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-top: 2.4rem;
+      max-width: 30rem;
+    }
+
+    strong {
+      color: var(--color-title-in-primary);
+      font: 700 3.6rem Archivo;
+      line-height: 4.2rem;
+    }
+  }
 
   .top-bar-container {
     align-items: center;
