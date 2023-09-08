@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
+import Card from "../components/Card";
 import Header from "../components/Header";
 import Select from "../components/Select";
 
 import { constants } from "../utils/constants";
-import { EventType } from "../utils";
+import { EventType } from "../utils/index";
 import { modality, service, skills } from "../utils/maps";
+import projects from "../utils/projects.json";
 
 import "../styles/ProjectList.scss";
 
@@ -54,6 +56,18 @@ export default function ProjectList() {
           />
         </form>
       </Header>
+      <main>
+        {projects.map((item) => (
+          <Card
+            description={item.description}
+            key={item.id}
+            modality={item.modality}
+            skills={item.skills}
+            title={item.title}
+            value={item.value}
+          />
+        ))}
+      </main>
     </div>
   );
 }
