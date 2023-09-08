@@ -29,12 +29,9 @@
   }
 
   label {
+    color: var(--color-text-in-primary);
     font-size: 1.4rem;
   }
-}
-
-label {
-  color: var(--color-text-in-primary);
 }
 
 @media (min-width: 700px) {
