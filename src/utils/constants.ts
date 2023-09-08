@@ -3,6 +3,7 @@ export const constants = {
   "choose-an-option": "Escolha uma opcao",
   "hire": "Contratar",
   "look-for-projects": "Procurar Projetos",
+  "make-proposal": "Fazer Proposta",
   "modality": "Modalidade",
   "service": "Serviço",
   "skills": "Habilidades",
