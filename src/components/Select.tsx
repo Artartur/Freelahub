@@ -13,16 +13,16 @@ interface OptionsMappers {
 interface SelectProps {
   label: string;
   name: string;
-  options: Array<OptionsMappers>;
   onChange: (event: EventSelectType) => void;
+  options: Array<OptionsMappers>;
   value: string;
 }
 
 export default function Select({
   label,
   name,
-  options,
   onChange,
+  options,
   value,
   ...otherProps
 }: SelectProps) {
